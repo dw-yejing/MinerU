@@ -1,3 +1,6 @@
+.venv
+.venv_bak
+mineru.egg-info
 *.tar
 *.tar.gz
 *.zip

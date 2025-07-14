@@ -11,7 +11,7 @@ def page_to_image(
     page: PdfPage,
     dpi: int = 144,  # changed from 200 to 144
     max_width_or_height: int = 2560,  # changed from 4500 to 2560
-) -> (Image.Image, float):
+) -> tuple[Image.Image, float]:
     scale = dpi / 72
 
     long_side_length = max(*page.get_size())

@@ -1,0 +1,24 @@
+{
+    "version": "0.2",
+    "ignorePaths": [],
+    "dictionaryDefinitions": [],
+    "dictionaries": [],
+    "words": [
+        "doclayout",
+        "huggingface",
+        "imgsz",
+        "mineru",
+        "modelscope",
+        "opendatalab",
+        "pdfdocument",
+        "pdfinterp",
+        "pdfium",
+        "pdfminer",
+        "pdfpage",
+        "pdfparser",
+        "unimernet",
+        "xyxy"
+    ],
+    "ignoreWords": [],
+    "import": []
+}

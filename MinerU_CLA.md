@@ -1,4 +1,5 @@
 # MinerU Contributor License Agreement
+
 In order to clarify the intellectual property license granted with Contributions from any person or entity, the open source project MinerU ("MinerU") must have a Contributor License Agreement (CLA) on file that has been signed by each Contributor, indicating agreement to the license terms below. This license is for your protection as a Contributor as well as the protection of MinerU and its users; it does not change your rights to use your own Contributions for any other purpose.
 
 You accept and agree to the following terms and conditions for Your present and future Contributions submitted to MinerU. Except for the license granted herein to MinerU and recipients of software distributed by MinerU, You reserve all right, title, and interest in and to Your Contributions.

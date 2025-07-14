@@ -1,0 +1,6 @@
+dpi:  Dots Per Inch, 每英寸点数
+mps:  Metal Performance Shaders, 苹果的Metal性能着色器
+vram: Video RAM, 显存
+mfd: Mathematical Formula Detection, 数学公式检测
+mfr: Mathematical Formula Recognition, 数学公式识别
+
