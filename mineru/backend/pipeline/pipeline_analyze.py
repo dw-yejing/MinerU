@@ -97,7 +97,7 @@ def doc_analyze(
         ocr_enabled_list.append(_ocr_enable)
         _lang = lang_list[pdf_idx]
 
-        # 收集每个数据集中的页面
+        # 收集每个数据集中的页面，pdf转图片
         images_list, pdf_doc = load_images_from_pdf(pdf_bytes)
         all_image_lists.append(images_list)
         all_pdf_docs.append(pdf_doc)
