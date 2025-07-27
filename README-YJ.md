@@ -100,3 +100,34 @@ __call__ 方法内部调用检测器（self.text_detector）和识别器（self.
 ocr_engine = PytorchPaddleOCR()
 dt_boxes, rec_res = ocr_engine(img)  # dt_boxes为检测框，rec_res为识别结果
 ```
+
+# 模型下载和加载
+
+支持多种模型来源
+通过环境变量 MINERU_MODEL_SOURCE 控制模型下载来源，支持：
+huggingface（默认）
+modelscope
+local（本地路径，不下载）
+2. 支持两种仓库模式
+repo_mode 参数决定下载哪类模型：
+pipeline
+vlm
+3. 路径映射
+根据 repo_mode 和 model_source，从 ModelPath 枚举中获取实际的仓库地址。
+4. 下载逻辑
+如果是 local，直接返回本地配置的路径。
+其他情况，调用 huggingface 或 modelscope 的 snapshot_download 方法，支持 allow_patterns 精确下载指定文件或目录。
+下载后返回本地缓存目录路径。
+
+# 大模型辅助多级标题生成
+当 mineru.json 中 llm-aided-config 中的 enable 为 true 时，系统会在文档处理流程中调用 LLM 服务，对文档的标题进行进一步的智能分级和优化，提升结构化效果.
+读取方式：通过 mineru.utils.config_reader.get_llm_aided_config() 读取配置。
+主要使用点：
+mineru/backend/vlm/token_to_middle_json.py
+在 token_to_page_info 和 result_to_middle_json 等函数中，判断 llm-aided-config 是否启用，如果启用则调用 LLM 服务优化标题分级。
+mineru/backend/pipeline/model_json_to_middle_json.py
+在 result_to_middle_json 函数中，类似地判断并调用 LLM 服务优化标题分级。
+具体流程
+读取配置，判断 llm-aided-config['title_aided']['enable'] 是否为 true。
+如果启用，则用配置的 api_key、base_url、model 调用 LLM 服务（如阿里云百炼）。
+对文档结构中的标题进行智能优化。
