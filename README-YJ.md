@@ -1,10 +1,12 @@
 # 安装
+
 ```bash
 cd MinerU
 uv pip install -e .[core] -i https://mirrors.aliyun.com/pypi/simple
 ```
 
 # 模型
+
 ```python
 class ModelPath:
     vlm_root_hf = "opendatalab/MinerU2.0-2505-0.9B"
@@ -20,35 +22,39 @@ class ModelPath:
 ```
 
 ## 使用cuda
+
 ```bash
 uv pip uninstall torch torchvision
 uv pip install torch torchvision --index-url https://download.pytorch.org/whl/cu118
 ```
 
 # MM_MD、NLP_MD、CONTENT_LIST 三种模式的区别
+
 这三种模式是MinerU项目中用于解析PDF文档并生成不同格式输出的模式，它们在处理文档内容时有显著的区别：
+
 1. MM_MD (mm_markdown) - 多媒体Markdown模式
-特点：最完整的输出模式，保留所有多媒体内容
-处理内容：
-✅ 图片：保留图片引用 ![]({img_path})
-✅ 表格：保留表格HTML结构或图片引用
-✅ 公式：保留LaTeX公式
-✅ 标题：转换为Markdown标题格式 # ## ###
-✅ 文本：保留所有文本内容
-✅ 图片/表格标题和脚注：完整保留
+   特点：最完整的输出模式，保留所有多媒体内容
+   处理内容：
+   ✅ 图片：保留图片引用 ![]({img_path})
+   ✅ 表格：保留表格HTML结构或图片引用
+   ✅ 公式：保留LaTeX公式
+   ✅ 标题：转换为Markdown标题格式 # ## ###
+   ✅ 文本：保留所有文本内容
+   ✅ 图片/表格标题和脚注：完整保留
 2. NLP_MD (nlp_markdown) - 自然语言处理Markdown模式
-特点：专注于文本内容，适合NLP任务
-处理内容：
-❌ 图片：跳过图片内容 (continue)
-❌ 表格：跳过表格内容 (continue)
-✅ 公式：保留LaTeX公式
-✅ 标题：转换为Markdown标题格式
-✅ 文本：保留所有文本内容
-❌ 图片/表格标题和脚注：不包含
+   特点：专注于文本内容，适合NLP任务
+   处理内容：
+   ❌ 图片：跳过图片内容 (continue)
+   ❌ 表格：跳过表格内容 (continue)
+   ✅ 公式：保留LaTeX公式
+   ✅ 标题：转换为Markdown标题格式
+   ✅ 文本：保留所有文本内容
+   ❌ 图片/表格标题和脚注：不包含
 3. CONTENT_LIST - 结构化内容列表模式
-特点：生成结构化的JSON格式，便于程序处理
-输出格式：返回JSON数组，每个元素包含：
-Apply to glossary.txt
+   特点：生成结构化的JSON格式，便于程序处理
+   输出格式：返回JSON数组，每个元素包含：
+   Apply to glossary.txt
+
 ```json
   {
     "type": "text|image|table|equation",
@@ -61,12 +67,14 @@ Apply to glossary.txt
     "table_footnote": ["表格脚注"],
     "page_idx": 0  // 页码
   }
-  ```
+```
+
   主要区别总结：
 
 <table> <tr> <th>特性</th> <th>MM_MD</th> <th>NLP_MD</th> <th>CONTENT_LIST</th> </tr> <tr> <td>图片处理</td> <td>✅ 保留图片引用</td> <td>❌ 跳过</td> <td>✅ 结构化存储</td> </tr> <tr> <td>表格处理</td> <td>✅ 保留HTML/图片</td> <td>❌ 跳过</td> <td>✅ 结构化存储</td> </tr> <tr> <td>公式处理</td> <td>✅ LaTeX格式</td> <td>✅ LaTeX格式</td> <td>✅ 结构化存储</td> </tr> <tr> <td>标题处理</td> <td>✅ Markdown格式</td> <td>✅ Markdown格式</td> <td>✅ 带级别信息</td> </tr> <tr> <td>输出格式</td> <td>纯文本Markdown</td> <td>纯文本Markdown</td> <td>JSON结构化数据</td> </tr> <tr> <td>适用场景</td> <td>完整文档展示</td> <td>NLP文本分析</td> <td>程序化处理</td> </tr> </table>
 
 # abandon region
+
 根据文档说明，Abandon = 2 包括：
 页眉 (Headers)
 页脚 (Footers)
@@ -74,6 +82,7 @@ Apply to glossary.txt
 页面注释 (Page Annotations)
 
 # ocr
+
 主入口类
 文件：mineru/model/ocr/paddleocr2pytorch/pytorch_paddle.py
 类：PytorchPaddleOCR
@@ -118,8 +127,16 @@ vlm
 如果是 local，直接返回本地配置的路径。
 其他情况，调用 huggingface 或 modelscope 的 snapshot_download 方法，支持 allow_patterns 精确下载指定文件或目录。
 下载后返回本地缓存目录路径。
+5. load chain
+`MinerU/mineru\cli\fast_api.py:102`
+  `MinerU/mineru\cli\common.py:383`
+    `MinerU/mineru\backend\vlm\vlm_analyze.py:70`
+      `MinerU/mineru\backend\vlm\base_predictor.py:106`
+        `MinerU/mineru\backend\vlm\predictor.py:38`
+
 
 # 大模型辅助多级标题生成
+
 当 mineru.json 中 llm-aided-config 中的 enable 为 true 时，系统会在文档处理流程中调用 LLM 服务，对文档的标题进行进一步的智能分级和优化，提升结构化效果.
 读取方式：通过 mineru.utils.config_reader.get_llm_aided_config() 读取配置。
 主要使用点：
@@ -131,3 +148,10 @@ mineru/backend/pipeline/model_json_to_middle_json.py
 读取配置，判断 llm-aided-config['title_aided']['enable'] 是否为 true。
 如果启用，则用配置的 api_key、base_url、model 调用 LLM 服务（如阿里云百炼）。
 对文档结构中的标题进行智能优化。
+
+# 版本查看
+
+/mineru/version.py 中的版本号，比 github tag中的版本号低一级
+
+<table><tr><th>/mineru/version.py</th><th>github tag</th></tr><tr><td>__version__ = "2.1.0"</td><td>__version__ = "2.1.1"</td></tr></table>
+

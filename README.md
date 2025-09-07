@@ -21,7 +21,6 @@
 [![arXiv](https://img.shields.io/badge/arXiv-2409.18839-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2409.18839)
 [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/opendatalab/MinerU)
 
-
 <a href="https://trendshift.io/repositories/11174" target="_blank"><img src="https://trendshift.io/api/badge/repositories/11174" alt="opendatalab%2FMinerU | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
 
 <!-- language -->
@@ -71,8 +70,8 @@
       <li>Fixed parsing interruptions caused by incomplete table structures in <code>vlm</code> mode</li>
     </ul>
   </details>
-  
-  <details>
+
+<details>
     <summary>2025/06/17 2.0.5 Released</summary>
     <ul>
       <li>Fixed the issue where models were still required to be downloaded in the <code>sglang-client</code> mode</li>
@@ -80,8 +79,8 @@
       <li>Fixed the issue where only the first instance would take effect when attempting to launch multiple <code>sglang-client</code> instances via multiple URLs within the same process</li>
     </ul>
   </details>
-  
-  <details>
+
+<details>
     <summary>2025/06/15 2.0.3 released</summary>
     <ul>
       <li>Fixed a configuration file key-value update error that occurred when downloading model type was set to <code>all</code></li>
@@ -90,8 +89,8 @@
       <li>Updated Dockerfile and installation documentation for deploying the full version of MinerU in sglang environment</li>
     </ul>
   </details>
-  
-  <details>
+
+<details>
     <summary>2025/06/13 2.0.0 Released</summary>
     <ul>
       <li><strong>New Architecture</strong>: MinerU 2.0 has been deeply restructured in code organization and interaction methods, significantly improving system usability, maintainability, and extensibility.
@@ -147,22 +146,22 @@
       <li>The <code>huggingface</code> and <code>modelscope</code> demos have been updated to versions that support handwriting recognition and PPOCRv5 models, which you can experience online</li>
   </ul>
   </details>
-  
-  <details>
+
+<details>
   <summary>2025/04/29 Release 1.3.10</summary>
   <ul>
       <li>Added support for custom formula delimiters, which can be configured by modifying the <code>latex-delimiter-config</code> section in the <code>magic-pdf.json</code> file in your user directory.</li>
   </ul>
   </details>
-  
-  <details>
+
+<details>
   <summary>2025/04/27 Release 1.3.9</summary>
   <ul>
       <li>Optimized formula parsing functionality, improved formula rendering success rate</li>
   </ul>
   </details>
-  
-  <details>
+
+<details>
   <summary>2025/04/23 Release 1.3.8</summary>
   <ul>
       <li>The default <code>ocr</code> model (<code>ch</code>) has been updated to <code>PP-OCRv4_server_rec_doc</code> (model update required)
@@ -175,24 +174,24 @@
       </li>
   </ul>
   </details>
-  
-  <details>
+
+<details>
   <summary>2025/04/22 Release 1.3.7</summary>
   <ul>
       <li>Fixed the issue where the lang parameter was ineffective during table parsing model initialization</li>
       <li>Fixed the significant speed reduction of OCR and table parsing in <code>cpu</code> mode</li>
   </ul>
   </details>
-  
-  <details>
+
+<details>
   <summary>2025/04/16 Release 1.3.4</summary>
   <ul>
       <li>Slightly improved OCR-det speed by removing some unnecessary blocks</li>
       <li>Fixed page-internal sorting errors caused by footnotes in certain cases</li>
   </ul>
   </details>
-  
-  <details>
+
+<details>
   <summary>2025/04/12 Release 1.3.2</summary>
   <ul>
       <li>Fixed dependency version incompatibility issues when installing on Windows with Python 3.13</li>
@@ -202,8 +201,8 @@
       <li>Fixed the occasional word adhesion issue in English text areas when OCR language is not specified (model update required)</li>
   </ul>
   </details>
-  
-  <details>
+
+<details>
   <summary>2025/04/08 Release 1.3.1</summary>
   <ul>
       <li>Fixed several compatibility issues
@@ -214,8 +213,8 @@
       </li>
   </ul>
   </details>
-  
-  <details>
+
+<details>
   <summary>2025/04/03 Release 1.3.0</summary>
   <ul>
       <li>Installation and compatibility optimizations
@@ -256,8 +255,8 @@
     <li>Fixed formula span loss issues in certain scenarios</li>
   </ul>
   </details>
-  
-  <details>
+
+<details>
   <summary>2025/02/24 1.2.0 released</summary>
   <p>This version includes several fixes and improvements to enhance parsing efficiency and accuracy:</p>
   <ul>
@@ -280,8 +279,8 @@
     </li>
   </ul>
   </details>
-  
-  <details>
+
+<details>
   <summary>2025/01/22 1.1.0 released</summary>
   <p>In this version we have focused on improving parsing accuracy and efficiency:</p>
   <ul>
@@ -303,8 +302,8 @@
     </li>
   </ul>
   </details>
-  
-  <details>
+
+<details>
   <summary>2025/01/10 1.0.1 released</summary>
   <p>This is our first official release, where we have introduced a completely new API interface and enhanced compatibility through extensive refactoring, as well as a brand new automatic language identification feature:</p>
   <ul>
@@ -327,8 +326,8 @@
     </li>
   </ul>
   </details>
-  
-  <details>
+
+<details>
   <summary>2024/11/22 0.10.0 released</summary>
   <p>Introducing hybrid OCR text extraction capabilities:</p>
   <ul>
@@ -336,18 +335,18 @@
     <li>Combines the dual advantages of accurate content extraction and faster speed in text mode, and more precise span/line region recognition in OCR mode.</li>
   </ul>
   </details>
-  
-  <details>
+
+<details>
   <summary>2024/11/15 0.9.3 released</summary>
   <p>Integrated <a href="https://github.com/RapidAI/RapidTable">RapidTable</a> for table recognition, improving single-table parsing speed by more than 10 times, with higher accuracy and lower GPU memory usage.</p>
   </details>
-  
-  <details>
+
+<details>
   <summary>2024/11/06 0.9.2 released</summary>
   <p>Integrated the <a href="https://huggingface.co/U4R/StructTable-InternVL2-1B">StructTable-InternVL2-1B</a> model for table recognition functionality.</p>
   </details>
-  
-  <details>
+
+<details>
   <summary>2024/10/31 0.9.0 released</summary>
   <p>This is a major new version with extensive code refactoring, addressing numerous issues, improving performance, reducing hardware requirements, and enhancing usability:</p>
   <ul>
@@ -367,39 +366,39 @@
     </li>
   </ul>
   </details>
-  
-  <details>
+
+<details>
   <summary>2024/09/27 Version 0.8.1 released</summary>
   <p>Fixed some bugs, and providing a <a href="https://github.com/opendatalab/MinerU/blob/master/projects/web_demo/README.md">localized deployment version</a> of the <a href="https://opendatalab.com/OpenSourceTools/Extractor/PDF/">online demo</a> and the <a href="https://github.com/opendatalab/MinerU/blob/master/projects/web/README.md">front-end interface</a>.</p>
   </details>
-  
-  <details>
+
+<details>
   <summary>2024/09/09 Version 0.8.0 released</summary>
   <p>Supporting fast deployment with Dockerfile, and launching demos on Huggingface and Modelscope.</p>
   </details>
-  
-  <details>
+
+<details>
   <summary>2024/08/30 Version 0.7.1 released</summary>
   <p>Add paddle tablemaster table recognition option</p>
   </details>
-  
-  <details>
+
+<details>
   <summary>2024/08/09 Version 0.7.0b1 released</summary>
   <p>Simplified installation process, added table recognition functionality</p>
   </details>
-  
-  <details>
+
+<details>
   <summary>2024/08/01 Version 0.6.2b1 released</summary>
   <p>Optimized dependency conflict issues and installation documentation</p>
   </details>
-  
-  <details>
+
+<details>
   <summary>2024/07/05 Initial open-source release</summary>
   </details>
 </details>
 
 <!-- TABLE OF CONTENT -->
-  
+
 <details open="open">
   <summary><h2 style="display: inline-block">Table of Contents</h2></summary>
   <ol>
@@ -455,13 +454,12 @@ https://github.com/user-attachments/assets/4bea02c9-6d54-4cd6-97ed-dff14340982c
 
 ## Quick Start
 
-If you encounter any installation issues, please first consult the <a href="#faq">FAQ</a>. </br>
-If the parsing results are not as expected, refer to the <a href="#known-issues">Known Issues</a>. </br>
+If you encounter any installation issues, please first consult the `<a href="#faq">`FAQ`</a>`. `</br>`
+If the parsing results are not as expected, refer to the `<a href="#known-issues">`Known Issues`</a>`. `</br>`
 There are three different ways to experience MinerU:
 
 - [Online Demo](#online-demo)
 - [Local Deployment](#local-deployment)
-
 
 > [!WARNING]
 > **Pre-installation Notice—Hardware and Software Environment Support**
@@ -535,8 +533,8 @@ cd MinerU
 uv pip install -e .[core]
 ```
 
-> [!NOTE]  
-> Linux and macOS systems automatically support CUDA/MPS acceleration after installation. For Windows users who want to use CUDA acceleration, 
+> [!NOTE]
+> Linux and macOS systems automatically support CUDA/MPS acceleration after installation. For Windows users who want to use CUDA acceleration,
 > please visit the [PyTorch official website](https://pytorch.org/get-started/locally/) to install PyTorch with the appropriate CUDA version.
 
 #### 1.3 Install Full Version (supports sglang acceleration) (requires device with Turing or newer architecture and at least 8GB GPU memory)
@@ -552,14 +550,16 @@ If you need to use **sglang to accelerate VLM model inference**, you can choose 
   uv pip install -e .[all]
   ```
 
-> [!TIP]  
+> [!TIP]
 > If any exceptions occur during the installation of `sglang`, please refer to the [official sglang documentation](https://docs.sglang.ai/start/install.html) for troubleshooting and solutions, or directly use Docker-based installation.
 
 - Build image using Dockerfile:
+
   ```bash
   wget https://gcore.jsdelivr.net/gh/opendatalab/MinerU@master/docker/global/Dockerfile
   docker build -t mineru-sglang:latest -f Dockerfile .
   ```
+
   Start Docker container:
   ```bash
   docker run --gpus all \
@@ -569,14 +569,15 @@ If you need to use **sglang to accelerate VLM model inference**, you can choose 
     mineru-sglang:latest \
     mineru-sglang-server --host 0.0.0.0 --port 30000
   ```
+
   Or start using Docker Compose:
   ```bash
     wget https://gcore.jsdelivr.net/gh/opendatalab/MinerU@master/docker/compose.yaml
     docker compose -f compose.yaml up -d
   ```
-  
+
 > [!TIP]
-> The Dockerfile uses `lmsysorg/sglang:v0.4.8.post1-cu126` as the default base image, which supports the Turing/Ampere/Ada Lovelace/Hopper platforms.  
+> The Dockerfile uses `lmsysorg/sglang:v0.4.8.post1-cu126` as the default base image, which supports the Turing/Ampere/Ada Lovelace/Hopper platforms.
 > If you are using the newer Blackwell platform, please change the base image to `lmsysorg/sglang:v0.4.8.post1-cu128-b200`.
 
 #### 1.4 Install client  (for connecting to sglang-server on edge devices that require only CPU and network connectivity)
@@ -718,39 +719,44 @@ mineru -p <input_path> -o <output_path> -b vlm-sglang-client -u http://127.0.0.1
 
 1. Directly invoke using Python API: [Python Invocation Example](demo/demo.py)
 2. Invoke using FastAPI:
+
    ```bash
    mineru-api --host 127.0.0.1 --port 8000
    ```
-   Visit http://127.0.0.1:8000/docs in your browser to view the API documentation.
 
+   Visit http://127.0.0.1:8000/docs in your browser to view the API documentation.
 3. Use Gradio WebUI or Gradio API:
+
    ```bash
    # Using pipeline/vlm-transformers/vlm-sglang-client backend
    mineru-gradio --server-name 127.0.0.1 --server-port 7860
    # Or using vlm-sglang-engine/pipeline backend
    mineru-gradio --server-name 127.0.0.1 --server-port 7860 --enable-sglang-engine
    ```
+
    Access http://127.0.0.1:7860 in your browser to use the Gradio WebUI, or visit http://127.0.0.1:7860/?view=api to use the Gradio API.
 
-
-> [!TIP]  
-> Below are some suggestions and notes for using the sglang acceleration mode:  
-> - The sglang acceleration mode currently supports operation on Turing architecture GPUs with a minimum of 8GB VRAM, but you may encounter VRAM shortages on GPUs with less than 24GB VRAM. You can optimize VRAM usage with the following parameters:  
->   - If running on a single GPU and encountering VRAM shortage, reduce the KV cache size by setting `--mem-fraction-static 0.5`. If VRAM issues persist, try lowering it further to `0.4` or below.  
->   - If you have more than one GPU, you can expand available VRAM using tensor parallelism (TP) mode: `--tp 2`  
-> - If you are already successfully using sglang to accelerate VLM inference but wish to further improve inference speed, consider the following parameters:  
->   - If using multiple GPUs, increase throughput using sglang's multi-GPU parallel mode: `--dp 2`  
->   - You can also enable `torch.compile` to accelerate inference speed by about 15%: `--enable-torch-compile`  
-> - For more information on using sglang parameters, please refer to the [sglang official documentation](https://docs.sglang.ai/backend/server_arguments.html#common-launch-commands)  
+> [!TIP]Below are some suggestions and notes for using the sglang acceleration mode:
+>
+> - The sglang acceleration mode currently supports operation on Turing architecture GPUs with a minimum of 8GB VRAM, but you may encounter VRAM shortages on GPUs with less than 24GB VRAM. You can optimize VRAM usage with the following parameters:
+>   - If running on a single GPU and encountering VRAM shortage, reduce the KV cache size by setting `--mem-fraction-static 0.5`. If VRAM issues persist, try lowering it further to `0.4` or below.
+>   - If you have more than one GPU, you can expand available VRAM using tensor parallelism (TP) mode: `--tp 2`
+> - If you are already successfully using sglang to accelerate VLM inference but wish to further improve inference speed, consider the following parameters:
+>   - If using multiple GPUs, increase throughput using sglang's multi-GPU parallel mode: `--dp 2`
+>   - You can also enable `torch.compile` to accelerate inference speed by about 15%: `--enable-torch-compile`
+> - For more information on using sglang parameters, please refer to the [sglang official documentation](https://docs.sglang.ai/backend/server_arguments.html#common-launch-commands)
 > - All sglang-supported parameters can be passed to MinerU via command-line arguments, including those used with the following commands: `mineru`, `mineru-sglang-server`, `mineru-gradio`, `mineru-api`
 
-> [!TIP]  
-> - In any case, you can specify visible GPU devices at the start of a command line by adding the `CUDA_VISIBLE_DEVICES` environment variable. For example:  
+> [!TIP]
+>
+> - In any case, you can specify visible GPU devices at the start of a command line by adding the `CUDA_VISIBLE_DEVICES` environment variable. For example:
+>
 >   ```bash
 >   CUDA_VISIBLE_DEVICES=1 mineru -p <input_path> -o <output_path>
 >   ```
-> - This method works for all command-line calls, including `mineru`, `mineru-sglang-server`, `mineru-gradio`, and `mineru-api`, and applies to both `pipeline` and `vlm` backends.  
-> - Below are some common `CUDA_VISIBLE_DEVICES` settings:  
+> - This method works for all command-line calls, including `mineru`, `mineru-sglang-server`, `mineru-gradio`, and `mineru-api`, and applies to both `pipeline` and `vlm` backends.
+> - Below are some common `CUDA_VISIBLE_DEVICES` settings:
+>
 >   ```bash
 >   CUDA_VISIBLE_DEVICES=1 Only device 1 will be seen
 >   CUDA_VISIBLE_DEVICES=0,1 Devices 0 and 1 will be visible
@@ -758,12 +764,16 @@ mineru -p <input_path> -o <output_path> -b vlm-sglang-client -u http://127.0.0.1
 >   CUDA_VISIBLE_DEVICES=0,2,3 Devices 0, 2, 3 will be visible; device 1 is masked
 >   CUDA_VISIBLE_DEVICES="" No GPU will be visible
 >   ```
-> - Below are some possible use cases:  
->   - If you have multiple GPUs and need to specify GPU 0 and GPU 1 to launch 'sglang-server' in multi-GPU mode, you can use the following command:  
+> - Below are some possible use cases:
+>
+>   - If you have multiple GPUs and need to specify GPU 0 and GPU 1 to launch 'sglang-server' in multi-GPU mode, you can use the following command:
+>
 >   ```bash
 >   CUDA_VISIBLE_DEVICES=0,1 mineru-sglang-server --port 30000 --dp 2
 >   ```
->   - If you have multiple GPUs and need to launch two `fastapi` services on GPU 0 and GPU 1 respectively, listening on different ports, you can use the following commands:  
+>
+>   - If you have multiple GPUs and need to launch two `fastapi` services on GPU 0 and GPU 1 respectively, listening on different ports, you can use the following commands:
+>
 >   ```bash
 >   # In terminal 1
 >   CUDA_VISIBLE_DEVICES=0 mineru-api --host 127.0.0.1 --port 8000
@@ -786,10 +796,10 @@ mineru -p <input_path> -o <output_path> -b vlm-sglang-client -u http://127.0.0.1
 
 # TODO
 
-- [x] Reading order based on the model  
-- [x] Recognition of `index` and `list` in the main text  
-- [x] Table recognition
-- [x] Heading Classification
+- [X] Reading order based on the model
+- [X] Recognition of `index` and `list` in the main text
+- [X] Table recognition
+- [X] Heading Classification
 - [ ] Code block recognition in the main text
 - [ ] [Chemical formula recognition](docs/chemical_knowledge_introduction/introduction.pdf)
 - [ ] Geometric shape recognition
@@ -807,8 +817,8 @@ mineru -p <input_path> -o <output_path> -b vlm-sglang-client -u http://127.0.0.1
 
 # FAQ
 
-- If you encounter any issues during usage, you can first check the [FAQ](docs/FAQ_en_us.md) for solutions.  
-- If your issue remains unresolved, you may also use [DeepWiki](https://deepwiki.com/opendatalab/MinerU) to interact with an AI assistant, which can address most common problems.  
+- If you encounter any issues during usage, you can first check the [FAQ](docs/FAQ_en_us.md) for solutions.
+- If your issue remains unresolved, you may also use [DeepWiki](https://deepwiki.com/opendatalab/MinerU) to interact with an AI assistant, which can address most common problems.
 - If you still cannot resolve the issue, you are welcome to join our community via [Discord](https://discord.gg/Tdedn9GTXq) or [WeChat](http://mineru.space/s/V85Yl) to discuss with other users and developers.
 
 # All Thanks To Our Contributors
@@ -870,7 +880,6 @@ Currently, some models in this project are trained based on YOLO. However, since
  </picture>
 </a>
 
-
 # Links
 
 - [LabelU (A Lightweight Multi-modal Data Annotation Tool)](https://github.com/opendatalab/labelU)
@@ -879,4 +888,4 @@ Currently, some models in this project are trained based on YOLO. However, since
 - [Vis3 (OSS browser based on s3)](https://github.com/opendatalab/Vis3)
 - [OmniDocBench (A Comprehensive Benchmark for Document Parsing and Evaluation)](https://github.com/opendatalab/OmniDocBench)
 - [Magic-HTML (Mixed web page extraction tool)](https://github.com/opendatalab/magic-html)
-- [Magic-Doc (Fast speed ppt/pptx/doc/docx/pdf extraction tool)](https://github.com/InternLM/magic-doc) 
+- [Magic-Doc (Fast speed ppt/pptx/doc/docx/pdf extraction tool)](https://github.com/InternLM/magic-doc)
